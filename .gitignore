@@ -1,1 +1,5 @@
 venv/
+cura_framework.egg-info/
+build/
+.env
+cura/__pycache__/

@@ -1,11 +1,15 @@
 # main.py
 from cura.agent import Agent
+from dotenv import load_dotenv
+
+load_dotenv()
 
 code_generation_agent = Agent(
     name="Code Generation Agent",
     description="An agent that generates code based on user input.",
     tools=[],
-    model="gpt-4o-mini"
+    model="gpt-4o-mini",
+    provider="openai"
 )
 
 print(code_generation_agent)

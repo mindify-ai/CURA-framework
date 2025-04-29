@@ -3,7 +3,7 @@ import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
 from bigcodebench.data import get_bigcodebench
-from bigcodebench.eval import evaluate
+from bigcodebench import evaluate
 from .pipeline import Pipeline
 
 def solve_problem(task_id: str, problem: dict, split: str = "complete") -> dict:
