@@ -5,7 +5,7 @@ code_generation_agent = Agent(
     name="Code Generation Agent",
     description="An agent that generates code based on user input.",
     tools=[],
-    models="gpt-4o-mini"
+    model="gpt-4o-mini"
 )
 
 print(code_generation_agent)
